@@ -138,13 +138,13 @@ require 'PHPMailer/SMTP.php';
            $mail->isSMTP();                       //Send using SMTP
             $mail->Host       = 'smtp.gmail.com'; //Set the SMTP server to send through
             $mail->SMTPAuth   = true;  //Enable SMTP authentication
-            $mail->Username   = 'anoymaity1@gmail.com';  //SMTP username
-            $mail->Password   = 'zdgrbixnpxfiedqj'; //SMTP password
+            $mail->Username   = 'Example@XYZ.com';  //SMTP username
+            $mail->Password   = 'password'; //SMTP password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; //Enable implicit TLS encryption
             $mail->Port       = 465; //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
         
             //Recipients
-            $mail->setFrom('anoymaity1@gmail.com', 'Thunder God');
+            $mail->setFrom('Example@XYZ.com', 'Thunder God');
             $mail->addAddress($email);     //Add a recipient
             
         
@@ -166,13 +166,13 @@ require 'PHPMailer/SMTP.php';
   
   // Find your Account SID and Auth Token at twilio.com/console
   // and set the environment variables. See http://twil.io/secure
-  //  $sid = 'ACa1327b231c4ae2d28cab8768f57bd246';
-  //  $token = '4b2025eab47e44fc3bd2f29e186997f2';
+  //  $sid = '';
+  //  $token = '';
   
   //  $twilio = new Client($sid, $token);
   
   //  $message = $twilio->messages
-  //                    ->create("+919073108721", // to
+  //                    ->create("+910000000000", // to
   //                             [
   //                                 "body" =>$cname.' Total bill is- '.$total.' and Due Date is- '.$ddate ,
   //                                 "from" => "+12707517165"

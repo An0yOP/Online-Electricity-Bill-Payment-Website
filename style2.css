@@ -1,0 +1,129 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing:border-box;
+
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    display: inline;
+}
+.icon{
+    height:18px;
+ 
+    text-align: center;
+    
+  
+}
+nav{
+    background: linear-gradient(45deg,rgb(224, 199, 196),#9dc0ee,rgb(243, 237, 237));
+    height:80px;
+    position: relative;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+}
+nav ul{
+    /* float: right; */
+    margin-right: 10px;
+}
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin: 5px;
+}
+nav ul li a{
+    color:black;
+    font-size: 20px;
+    
+    padding-right:10px;
+}
+a:hover{
+    border-bottom: 2px solid rgb(1, 1, 27);
+    transition: 0.5s;
+    font-size: 22px;
+}
+ 
+@media(max-width:952px){
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media(max-width:858px){
+    ul{
+        position:fixed;
+        width:100px;
+        height:100vh;
+
+
+    }
+    nav ul li{
+        display:block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+}
+.mycointainer{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color:#9dc0ee;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active{
+    background: #2d4c74;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  .footer{
+    padding-block:50px;
+    padding-bottom:25px;
+    background: color #151515;
+    color: #666873;
+
+  }
+  .footer-cointainer{
+    width:50%;
+    margin:auto;
+    padding:0 15px;
+  }
+  .footer-top{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    row-gap:20px;
+  }
+  .footer title{
+    font-size:18px;
+    color:#fff;
+    font-weight:500;
+    margin-bottom:20px;
+}
+ /* .first{
+    background:#9dc0ee;
+    border-radius: 20px;
+    color:antiquewhite;
+}  */
+  
+  
+
+  
+  
+
